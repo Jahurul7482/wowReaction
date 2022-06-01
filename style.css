@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+body{
+    background-color: #ddd;
+}
+.container{
+    height: 80vh;
+    width: 80vh;
+    background-color: whitesmoke;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    top: 10vh;
+}
+.circle{
+    height: 60vh;
+    width: 60vh;
+    background-color: #fcc752;
+    position: relative;
+    top: 10vh;
+    left: 10vh;
+    border-radius: 50%;
+}
+.asset-1{
+    background-color: transparent;
+    height: 15vh;
+    width: 11vh;
+    position: relative;
+    top: 15vh;
+    left: 35vh;
+    border-radius: 50%;
+    border-top: #D77500 3vh solid;
+}
+.asset-2{
+    background-color: transparent;
+    height: 15vh;
+    width: 11vh;
+    position: absolute;
+    top: 15vh;
+    right: 35vh;
+    border-radius: 50%;
+    border-top: #D77500 3vh solid;
+}
+.eye-ball{
+    background-color: #333B61;
+    position: absolute;
+    top: 1.5vh;
+    left: .5vh;
+    height: 12vh;
+    width: 10vh;
+    border-radius: 50%;
+    animation: eyeanimate 3s infinite;
+}
+.asset-3{
+    background-color: #692E10;
+    height: 19vh;
+    width: 15vh;
+    position: absolute;
+    top: 35vh;
+    left: 22.5vh;
+    border-radius: 50%;
+    animation: mouthanimate 3s infinite;
+}
+@keyframes eyeanimate {
+    50%{
+        height: 2%;
+        transform: translateY(4vh);
+    }
+    55%{
+        height: 100%;
+        transform: translateY(0);
+    }
+    60%{
+        height: 2%;
+        transform: translateY(4vh);
+    }
+    65%{
+        height: 100%;
+        transform: translateY(0);
+    }
+}
+@keyframes mouthanimate {
+    20%{
+        height: 6%;
+        transform: translateY(4vh);
+    }
+    30%{
+        height: 5%;
+        transform: translateY(4vh);
+    }
+    70%{
+        transform: scale(.4);
+    }
+}
